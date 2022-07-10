@@ -1,0 +1,44 @@
+#!/bin/sh
+# Aliases for common shell commands
+
+# Ensure alias definitions are consistent
+unalias -a
+
+# Enable colors, human-readable output, verbose, et cetera by default.
+alias \
+    ls='ls -h --color=auto' \
+    diff='diff --color=auto' \
+    ln='ln -v' \
+    rm='rm -v' \
+    cp='cp -v' \
+    mv='mv -v' \
+    mkdir='mkdir -v' \
+    df='df -h' \
+    free='free -h' \
+    shred='shred -u' \
+    ip='ip -color=auto'
+
+# youtube-dl
+alias \
+    ffmpeg='ffmpeg -hide_banner' \
+    yt-dlp="yt-dlp -f 'mp4*+bestaudio/best' --embed-metadata -i -o '%(title)s.%(ext)s'" \
+    yt-dlpa="yt-dlp -x -f 'bestaudio/best'"
+
+# Use superior alternatives to some utilities
+alias \
+    vim='nvim' \
+    convert='magick' \
+    du='dust' \
+    bat='bat -p' \
+    cat='bat' \
+    rg='rg -.'
+
+# stardict
+alias \
+    spanword="sdcv -u \"Spanish - English\"" \
+    enword="sdcv -u \"English - Portuguese\""
+
+# other
+alias \
+    lf='lfub' \
+    sxiv='sxiv -ab'
