@@ -2,6 +2,8 @@
 
 Leia em [English](./README.md)
 
+### Sumário
+
 Minha configuração do Arch Linux. Inclui parâmetros úteis para um punhado de
 programas que rodam na linha de comando.
 
