@@ -4,15 +4,11 @@
 GPG_TTY=$(tty)
 export GPG_TTY
 
-# Disable Ctrl-s terminal freeze
+# Enable colors and change prompt:
+autoload -U colors && colors
+PROMPT="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+setopt autocd
 stty stop undef
-
-# Use a colored prompt
-autoload -Uz colors
-colors
-PS1="%B%F{green}%~%f $%b "
-
-# Treat lines beginning with # as comments
 setopt interactive_comments
 
 # Tab = four spaces
