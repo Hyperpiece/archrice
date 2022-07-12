@@ -54,13 +54,12 @@ set wrap
 
 " Translation
 map <F1> :setlocal spell spelllang=pt_br<CR>
-map <F2> :setlocal spell spelllang=es_es<CR>
-map <F3> :setlocal spell spelllang=en_us<CR>
-map <F4> :setlocal spell spelllang=fr<CR>
-map <F5> :setlocal nospell<CR>
+map <F2> :setlocal spell spelllang=en_us<CR>
+map <F3> :setlocal spell spelllang=es_es<CR>
+map <F4> :setlocal nospell<CR>
 
-map <F7> :set scrollbind cursorbind<CR>
-map <F8> :set noscrollbind nocursorbind<CR>
+map <F6> :set scrollbind cursorbind<CR>
+map <F7> :set noscrollbind nocursorbind<CR>
 
 set encoding=utf-8
 set fileencoding=utf-8
