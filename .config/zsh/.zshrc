@@ -4,7 +4,7 @@
 GPG_TTY=$(tty)
 export GPG_TTY
 
-# Enable colors and change prompt:
+# Enable colors and change prompt
 autoload -U colors && colors
 PROMPT="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 setopt autocd
@@ -55,7 +55,7 @@ zle-line-init() {
 }
 zle -N zle-line-init
 
-# Load aliases if existent.
+# Load aliases if existent
 [[ -f "$HOME/.config/aliasrc" ]] && . "$HOME/.config/aliasrc"
 
 # Use lf to switch directories and bind it to ctrl-o
@@ -71,6 +71,5 @@ lfcd() {
 
 bindkey -s '^o' '^ulfcd\n'
 
-# Make use of zsh-fast-syntax-highlighting if available.
-# This line should always be last.
+# Make use of zsh-fast-syntax-highlighting if available; should be last
 . /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
