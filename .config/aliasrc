@@ -1,13 +1,12 @@
 #!/bin/sh
 # Aliases for common shell commands
 
-# Ensure alias definitions are consistent
-unalias -a
-
 # Enable colors, human-readable output, verbose, et cetera by default.
 alias \
     ls='ls -h --color=auto' \
     diff='diff --color=auto' \
+    grep='grep --color=auto' \
+    du='du -h' \
     ln='ln -v' \
     rm='rm -v' \
     cp='cp -v' \
@@ -27,16 +26,12 @@ alias \
 # Use superior alternatives to some utilities
 alias \
     vim='nvim' \
-    convert='magick' \
-    du='dust' \
     bat='bat -p' \
-    cat='bat' \
-    rg='rg -.'
+    cat='bat'
 
 # stardict
 alias \
-    spanword="sdcv -u \"Spanish - English\"" \
-    enword="sdcv -u \"English - Portuguese\""
+    spanword="sdcv -u \"Spanish - English\""
 
 # other
 alias \
