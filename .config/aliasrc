@@ -29,10 +29,6 @@ alias \
     bat='bat -p' \
     cat='bat'
 
-# stardict
-alias \
-    spanword="sdcv -u \"Spanish - English\""
-
 # other
 alias \
     lf='lfub' \
