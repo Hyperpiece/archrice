@@ -1,7 +1,5 @@
 # archrice: dotfiles
 
-Read in [Português](./LEIAME.md)
-
 ### Summary
 
 My Arch Linux configuration. Features useful tweaks for a handful of
