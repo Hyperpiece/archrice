@@ -22,6 +22,7 @@ Settings are currently available for the programs below:
 * newsboat
 * picom
 * zathura
+* pipewire
 
 List of dependencies: to-do
 
