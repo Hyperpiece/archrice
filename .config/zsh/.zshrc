@@ -4,7 +4,7 @@
 GPG_TTY=$(tty)
 export GPG_TTY
 
-# Enable colors and change prompt
+# Enable coloured prompt
 autoload -U colors && colors
 PROMPT="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 setopt autocd
