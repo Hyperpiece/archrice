@@ -3,33 +3,33 @@
 
 # Enable colours, human-readable output, verbose, et cetera by default.
 alias \
-    ls='ls -h --color=auto' \
-    diff='diff --color=auto' \
-    grep='grep --colour=auto' \
-    du='du -h' \
-    ln='ln -v' \
-    rm='rm -v' \
-    cp='cp -v' \
-    mv='mv -v' \
-    mkdir='mkdir -v' \
-    df='df -h' \
-    free='free -h' \
-    shred='shred -u' \
-    ip='ip -color=auto'
+	ls='ls -h --color=auto' \
+	diff='diff --color=auto' \
+	grep='grep --colour=auto' \
+	du='du -h' \
+	ln='ln -v' \
+	rm='rm -v' \
+	cp='cp -v' \
+	mv='mv -v' \
+	mkdir='mkdir -v' \
+	df='df -h' \
+	free='free -h' \
+	shred='shred -u' \
+	ip='ip -color=auto'
 
 # youtube-dl
 alias \
-    ffmpeg='ffmpeg -hide_banner' \
-    yt-dlp="yt-dlp -f 'mp4*+bestaudio/best' --embed-metadata -i -o '%(title)s.%(ext)s'" \
-    yt-dlpa="yt-dlp -x -f 'bestaudio/best'"
+	ffmpeg='ffmpeg -hide_banner' \
+	yt-dlp="yt-dlp -f 'mp4*+bestaudio/best' --embed-metadata -i -o '%(title)s.%(ext)s'" \
+	yt-dlpa="yt-dlp -x -f 'bestaudio/best'"
 
 # Use superior alternatives to some utilities
 alias \
-    vim='nvim' \
-    bat='bat -p' \
-    cat='bat'
+	vim='nvim' \
+	bat='bat -p' \
+	cat='bat'
 
 # other
 alias \
-    lf='lfub' \
-    sxiv='sxiv -ab'
+	lf='lfub' \
+	sxiv='sxiv -ab'

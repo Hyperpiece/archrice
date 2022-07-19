@@ -122,5 +122,5 @@ ex=🎯:\
 
 # Start WM
 if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
-    exec startx "$XINITRC" &>/dev/null
+	exec startx "$XINITRC" &>/dev/null
 fi

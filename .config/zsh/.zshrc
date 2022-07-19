@@ -1,6 +1,6 @@
 # Hyper's zsh config
 
-# Needed
+# GnuPG
 GPG_TTY=$(tty)
 export GPG_TTY
 
@@ -11,8 +11,8 @@ setopt autocd
 stty stop undef
 setopt interactive_comments
 
-# Tab = four spaces
-tabs -4
+# Tabstop
+tabs -8
 
 # Use a history file
 HISTSIZE=10000
@@ -42,16 +42,16 @@ zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 zle-keymap-select() {
-    if [[ $KEYMAP == vicmd ]] || [[ $1 == block ]]; then
-        echo -ne "\e[1 q"
-    elif [[ $KEYMAP == main ]] || [[ $KEYMAP == viins ]] || [[ -z $KEYMAP ]] || [[ $1 == beam ]]; then
-        echo -ne "\e[5 q"
-    fi
+	if [[ $KEYMAP == vicmd ]] || [[ $1 == block ]]; then
+		echo -ne "\e[1 q"
+	elif [[ $KEYMAP == main ]] || [[ $KEYMAP == viins ]] || [[ -z $KEYMAP ]] || [[ $1 == beam ]]; then
+		echo -ne "\e[5 q"
+	fi
 }
 zle -N zle-keymap-select
 zle-line-init() {
-    zle -K viins
-    echo -ne "\e[5 q"
+	zle -K viins
+	echo -ne "\e[5 q"
 }
 zle -N zle-line-init
 
@@ -60,13 +60,13 @@ zle -N zle-line-init
 
 # Use lf to switch directories and bind it to ctrl-o
 lfcd() {
-    tmp="$(mktemp -uq)"
-    trap 'rm -f $tmp >/dev/null 2>&1' HUP INT QUIT TERM PWR EXIT
-    lf -last-dir-path="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
+	tmp="$(mktemp -uq)"
+	trap 'rm -f $tmp >/dev/null 2>&1' HUP INT QUIT TERM PWR EXIT
+	lf -last-dir-path="$tmp" "$@"
+	if [ -f "$tmp" ]; then
+		dir="$(cat "$tmp")"
+		[ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+	fi
 }
 
 bindkey -s '^o' '^ulfcd\n'

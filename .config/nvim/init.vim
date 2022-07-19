@@ -13,7 +13,7 @@ filetype plugin indent on
 " gruvbox
 let g:gruvbox_italic=1
 if (has("termguicolors"))
-    set termguicolors
+	set termguicolors
 endif
 
 autocmd vimenter * ++nested colorscheme gruvbox
@@ -22,7 +22,7 @@ autocmd vimenter * ++nested colorscheme gruvbox
 let g:airline_powerline_fonts=1
 
 if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
+	let g:airline_symbols = {}
 endif
 
 " powerline symbols
@@ -39,17 +39,9 @@ let g:airline_symbols.dirty='⚡'
 " Enumerate lines
 set number
 
-" Use 4 spaces per indentation level
-set expandtab
-set shiftwidth=4
-set softtabstop=4
-
-" Tab = four spaces
-set tabstop=4
-
-" Limit all lines to a maximum of 79 characters
-set textwidth=79
+" Use Linus Torvalds's formatting style
+set shiftwidth=8
+set tabstop=8
+set textwidth=80
 set wrap
-
-" Automatically remove all trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
