@@ -4,4 +4,6 @@ nm-applet &
 mpd &
 unclutter &
 pipewire &
+dunst &
+setbg &
 exec i3

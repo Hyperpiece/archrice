@@ -24,5 +24,6 @@ Settings are currently available for the programs below:
 * rofi
 * xinit
 * zathura
+* dunst
 
 Kudos to [Luke Smith](https://github.com/LukeSmithxyz)!
