@@ -1,7 +1,6 @@
-# Hyper's zsh profile
+# Hyper's bash profile
 
 # PATH
-export ZDOTDIR="$HOME/.config/zsh"
 export PATH="$HOME/.local/bin:$PATH"
 
 # XDG Base Directory
@@ -13,7 +12,7 @@ export XDG_DATA_DIRS="/usr/local/share:/usr/share"
 export XDG_CONFIG_DIRS="/etc/xdg"
 
 # Default programs
-export EDITOR="nvim"
+export EDITOR="vim"
 export PAGER="less"
 export BROWSER="firefox"
 export LESSHISTFILE="-"

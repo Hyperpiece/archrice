@@ -1,11 +1,11 @@
 #!/bin/sh
 # Aliases for common shell commands
 
-# Enable colours, human-readable output, verbose, et cetera by default.
+# Enable colors, human-readable output, verbose, et cetera by default.
 alias \
 	ls='ls -h --color=auto' \
 	diff='diff --color=auto' \
-	grep='grep --colour=auto' \
+	grep='grep --color=auto' \
 	du='du -h' \
 	ln='ln -v' \
 	rm='rm -v' \
