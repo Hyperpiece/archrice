@@ -1,5 +1,7 @@
 # Hyper's bash config
 
+set -o vi
+
 # GnuPG
 GPG_TTY=$(tty)
 export GPG_TTY

@@ -6,24 +6,23 @@ My Arch Linux configuration. Features useful tweaks for a handful of
 command-line programs.
 
 Settings are currently available for the programs below:
-* zsh
-* vim/neovim
-* less
-* gtk2
-* gtk3
-* lf
-* awesome
+* bash
+* vim
+* alacritty
 * bat
 * fontconfig
-* kitty
+* gtk2
+* gtk3
+* i3
+* lf
 * mpd
 * mpv
 * ncmpcpp
 * newsboat
 * picom
-* zathura
 * pipewire
-
-List of dependencies: to-do
+* rofi
+* xinit
+* zathura
 
 Kudos to [Luke Smith](https://github.com/LukeSmithxyz)!
