@@ -23,12 +23,6 @@ alias \
 	yt-dlp="yt-dlp -f 'mp4*+bestaudio/best' --embed-metadata -i -o '%(title)s.%(ext)s'" \
 	yt-dlpa="yt-dlp -x -f 'bestaudio/best'"
 
-# Use superior alternatives to some utilities
-alias \
-	vim='nvim' \
-	bat='bat -p' \
-	cat='bat'
-
 # other
 alias \
 	lf='lfub' \
