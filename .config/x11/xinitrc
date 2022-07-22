@@ -1,1 +1,7 @@
-exec awesome
+setxkbmap -layout br -variant abnt2 &
+picom &
+nm-applet &
+mpd &
+unclutter &
+pipewire &
+exec i3
