@@ -25,6 +25,5 @@ Settings are currently available for the programs below:
 * xinit
 * zathura
 * dunst
-* fcitx5
 
 Kudos to [Luke Smith](https://github.com/LukeSmithxyz)!
