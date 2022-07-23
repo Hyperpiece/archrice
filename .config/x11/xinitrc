@@ -1,4 +1,11 @@
-setxkbmap -layout br -variant abnt2 &
+# vim:ft=conf
+#export LANG=zh_CN.UTF-8
+#export LANGUAGE=zh_CN:en_US
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+
+setxkbmap -layout br,ru,cn -option grp:win_space_toggle &
 picom &
 nm-applet &
 mpd &
@@ -6,4 +13,5 @@ unclutter &
 pipewire &
 dunst &
 setbg &
+
 exec i3

@@ -58,5 +58,10 @@ set textwidth=80
 set wrap
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Localization
+set encoding=utf8
+set fileencoding=utf8
+set fileencodings=utf8,cp936,gb18030,big5
+
 " ~/ clean-up
 set viminfo=""

@@ -1,5 +1,4 @@
-#!/bin/sh
-# Aliases for common shell commands
+# vim:ft=sh
 
 # Enable colors, human-readable output, verbose, et cetera by default.
 alias \
