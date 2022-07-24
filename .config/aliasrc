@@ -25,4 +25,5 @@ alias \
 # other
 alias \
 	lf='lfub' \
-	sxiv='sxiv -ab'
+	sxiv='sxiv -ab' \
+	cmd='wine cmd'
