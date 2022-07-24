@@ -38,6 +38,7 @@ export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export GOPATH="$XDG_DATA_HOME/go"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export WINEPREFIX="$XDG_DATA_HOME/wineprefixes/default"
 
 # This is the list for lf icons
 export LF_ICONS="\
